@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_webapi_first_course/helpers/weekday.dart';
 import 'package:flutter_webapi_first_course/models/journal.dart';
+import 'package:uuid/uuid.dart';
 
 class JournalCard extends StatelessWidget {
   final Journal? journal;
@@ -12,7 +13,6 @@ class JournalCard extends StatelessWidget {
   Widget build(BuildContext context) {
     if (journal != null) {
       return InkWell(
-        onTap: () {},
         child: Container(
           height: 115,
           margin: const EdgeInsets.all(8),
@@ -79,7 +79,10 @@ class JournalCard extends StatelessWidget {
       );
     } else {
       return InkWell(
-        onTap: () {},
+        //ao clicar em um espaço sem anotação, vai para a tela de add
+        onTap: () {
+          callAddJournalScreen(context);
+        },
         child: Container(
           height: 115,
           alignment: Alignment.center,
@@ -91,5 +94,14 @@ class JournalCard extends StatelessWidget {
         ),
       );
     }
+  }
+
+  callAddJournalScreen(BuildContext context) {
+    Navigator.pushNamed(context, 'add-journal',
+        arguments: Journal(
+            id: Uuid().v1(),
+            content: "",
+            createdAt: showedDate,
+            updatedAt: showedDate));
   }
 }

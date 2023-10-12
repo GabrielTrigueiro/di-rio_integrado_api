@@ -28,5 +28,6 @@ List<JournalCard> generateListJournalCards(
       );
     }
   });
+
   return list;
 }
