@@ -8,6 +8,9 @@ void main() {
 
   //comunicador com a api fake
   JournalService service = JournalService();
+
+  service.register("testando");
+  service.get();
 }
 
 class MyApp extends StatelessWidget {
