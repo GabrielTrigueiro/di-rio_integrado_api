@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_webapi_first_course/services/journal_service.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'screens/home_screen/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
+
+  //comunicador com a api fake
+  JournalService service = JournalService();
 }
 
 class MyApp extends StatelessWidget {
@@ -23,7 +27,6 @@ class MyApp extends StatelessWidget {
               titleTextStyle: TextStyle(
                 color: Colors.white,
               ))),
-
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.light,
       initialRoute: "home",
