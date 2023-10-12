@@ -4,11 +4,16 @@ class JournalService {
   static const String url = "http://192.168.15.1:3000/";
   static const String resource = "learnhttp";
 
-  String getUrl() {
-    return "$url$resource";
+  Uri getUri() {
+    return Uri.parse("$url$resource");
   }
 
   register(String content) {
-    http.post(Uri.parse(getUrl()), body: {"content": content});
+    http.post(getUri(), body: {"content": content});
+  }
+
+  Future<String> get() async {
+    http.Response response = await http.get(getUri());
+    return response.body;
   }
 }
