@@ -7,10 +7,8 @@ import 'screens/home_screen/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
-  //comunicador com a api fake
   JournalService service = JournalService();
-  // service.register("testando");
-  // service.get();
+  service.register(Journal.empty());
 }
 
 class MyApp extends StatelessWidget {

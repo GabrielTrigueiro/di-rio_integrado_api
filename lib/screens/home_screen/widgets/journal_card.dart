@@ -98,10 +98,17 @@ class JournalCard extends StatelessWidget {
 
   callAddJournalScreen(BuildContext context) {
     Navigator.pushNamed(context, 'add-journal',
-        arguments: Journal(
-            id: Uuid().v1(),
-            content: "",
-            createdAt: showedDate,
-            updatedAt: showedDate));
+            arguments: Journal(
+                id: Uuid().v1(),
+                content: "",
+                createdAt: showedDate,
+                updatedAt: showedDate))
+        .then((value) => {
+              if (value != null && value == true)
+                {
+                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                      content: Text("Registro feito com sucesso")))
+                }
+            });
   }
 }
