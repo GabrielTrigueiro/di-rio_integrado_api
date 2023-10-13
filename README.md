@@ -1,6 +1,4 @@
-![Thumbnail GitHub](https://github.com/alura-cursos/flutter_webapi_first_course/raw/main/thumbnail01.png)
-
-Repositório do Curso de Flutter com Web API - Integrando sua Aplicação, da Alura. 
+Diário integrado com API
 
 ## ✔️ Técnicas e tecnologias
 
@@ -15,7 +13,7 @@ Repositório do Curso de Flutter com Web API - Integrando sua Aplicação, da Al
 
 O código de Flutter: Web API - Integrando sua Aplicação são **Classes** e **Funções** para gerar uma aplicação de um **Diário pessoal**, que **registra entradas diárias** da pessoa usuária do aplicativo.
 
-![GIF animado demonstrando funcionalidades do projeto](https://github.com/alura-cursos/flutter_webapi_first_course/raw/main/gif01.gif)
+![GIF animado demonstrando funcionalidades do projeto](https://i.imgur.com/CnwSWF5.gif)
 
 ## 🛠️ Abrir e rodar o projeto
 
@@ -28,14 +26,8 @@ O código de Flutter: Web API - Integrando sua Aplicação são **Classes** e **
 
 ## 📚 Mais informações do curso
 
-Gostou do projeto e quer conhecer mais? Você pode [acessar o curso](https://cursos.alura.com.br/course/flutter-webapi-integrando-aplicacao) que desenvolve o projeto desde o começo! Nele você aprenderá:
-
 - O que é uma Web API;
 - Configurar uma API Local;
 - Configurar um projeto Flutter para fazer requisições para APIs;
 - O que é e como usar REST e JSON;
 - Métodos do HTTP como GET e POST;
-
-Esse curso faz parte da [formação de Flutter da Alura](https://cursos.alura.com.br/formacao-flutter)
-
-*Te vejo lá!*
