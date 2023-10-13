@@ -10,6 +10,7 @@ O código de Flutter: Web API - Integrando sua Aplicação são **Classes** e **
 - `async/await`
 - `interceptors`
 - `logger`
+- `json server`
 
 ## 🛠️ Abrir e rodar o projeto
 **Para executar este projeto você precisa:**
