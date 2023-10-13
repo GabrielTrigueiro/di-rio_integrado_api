@@ -3,6 +3,11 @@
     "content": "Olá mundo"
   },
   "journals": [
-
+    {
+      "id": "d0b08120-69a6-11ee-9f30-65281c116e4e",
+      "content": "testado get all",
+      "created_at": "2023-10-04 08:59:11.568101",
+      "updated_at": "2023-10-04 08:59:11.568101"
+    }
   ]
 }

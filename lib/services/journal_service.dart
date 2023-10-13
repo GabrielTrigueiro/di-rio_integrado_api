@@ -33,4 +33,22 @@ class JournalService {
     http.Response response = await client.get(getUri());
     return response.body;
   }
+
+  //criando método de get all
+  //o arquivo chega como um bloco de json, temos que traduzir ter nossa lista de journal
+  Future<List<Journal>> getAll() async {
+    http.Response response = await client.get(getUri());
+    if (response.statusCode != 200) {
+      throw Exception();
+    }
+    List<Journal> list = [];
+
+    List<dynamic> listDynamic = json.decode(response.body);
+
+    for (var jsonMap in listDynamic) {
+      list.add(Journal.fromMap(jsonMap));
+    }
+
+    return list;
+  }
 }
