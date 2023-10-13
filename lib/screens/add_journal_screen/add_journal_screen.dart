@@ -19,7 +19,7 @@ class AddJournalScreen extends StatelessWidget {
               onPressed: () {
                 registerJournal(context);
               },
-              icon: Icon(Icons.check))
+              icon: const Icon(Icons.check))
         ],
       ),
       body: Padding(
@@ -35,11 +35,12 @@ class AddJournalScreen extends StatelessWidget {
     );
   }
 
-  registerJournal(BuildContext context) async {
+  registerJournal(BuildContext context) {
     String content = _contentController.text;
     JournalService service = JournalService();
     journal.content = content;
-    bool result = await service.register(journal);
-    Navigator.pop(context, result);
+    service
+        .register(journal)
+        .then((result) => {Navigator.pop(context, result)});
   }
 }
