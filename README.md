@@ -5,11 +5,11 @@ O código de Flutter: Web API - Integrando sua Aplicação são **Classes** e **
 ![GIF animado demonstrando funcionalidades do projeto](https://i.imgur.com/CnwSWF5.gif)
 
 ## ✔️ Técnicas e tecnologias
-- `API`: O que é e como funciona uma API e sua relação com a internet;
-- `http`: O que é o Protocolo HTTP e também a Biblioteca HTTP do Dart;
-- `async/await`: Como usar o `async` e o `await` para requisições que são operações assíncronas;
-- `interceptors`: O que é e como usar um interceptador HTTP;
-- `logger`: O que é e como usar um logger para melhor visualização no console;
+- `API`
+- `http`
+- `async/await`
+- `interceptors`
+- `logger`
 
 ## 🛠️ Abrir e rodar o projeto
 **Para executar este projeto você precisa:**
